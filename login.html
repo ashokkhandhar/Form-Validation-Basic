@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" onsubmit="return validation()" name="login">
+        <div>
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email">
+            <span id="emailerror"></span>
+        </div>
+
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password">
+            <span id="passworderror"></span>
+        </div>
+        <div>
+            <input type="submit" name="Submit" id="submit">
+            <div>
+                new User? <a href="./index.html">Sign Up</a>
+            </div>
+        </div>
+    </form>
+</body>
+<script src="./login.js"></script>
+</html>

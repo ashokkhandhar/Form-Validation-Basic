@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="signupform">
+        <h3>Sign Up</h3>
+        <form name="signUp" onsubmit="return formValidation()">
+            <div class="formelement">
+                <label for="fullname">Name: </label>
+                <input type="text" id="fullname" name="fullname" placeholder="Full name"><span id="nameerror" class="formerror"></span>
+            </div>
+            <div class="formelement">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="name@gmail.com"><span id="emailerror" class="formerror"></span>
+            </div>
+            <div class="formelement">
+                Gender: 
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="other" id="other">
+                <label for="other">Other</label>
+            </div>
+            <div id="selections">
+                <label for="profetion">Profetion: </label>
+                <select name="Profetion" id="profetion">
+                    <option value="Full Stack Developer" selected>Full stack Developer</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Software Developer">Backend Developer</option>
+                </select>
+            </div>
+            <div class="formelement">
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password"><span id="passworderror" class="formerror"></span>
+            </div>
+            <div class="formelement">
+                <label for="cpassword">Confirm Password: </label>
+                <input type="password" id="cpassword" name="cpassword"><span id="cpassworderror" class="formerror"></span>
+            </div>
+            <div>
+                <input type="checkbox" name="tnc" id="tnc">
+                <label for="tnc">Are you agree with T&C?</label>
+            </div>
+            <div>
+                <input type="submit" value="Submit" id="submit" disabled>
+                <div>
+                    Already have an account? <a href="./login.html">log in</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
